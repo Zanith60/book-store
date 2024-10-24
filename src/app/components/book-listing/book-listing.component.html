@@ -1,0 +1,18 @@
+<div *ngIf="carts.length">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>User ID</th>
+        <th>Total Items</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cart of carts">
+        <td>{{ cart.id }}</td>
+        <td>{{ cart.userId }}</td>
+        <td>{{ cart.totalItems }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
